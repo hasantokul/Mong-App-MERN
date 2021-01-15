@@ -1,0 +1,6 @@
+export const SEARCH_USER = "SEARCH_USER"
+export const SEARCH_USER_SUCCESS = "SEARCH_USER_SUCCESS"
+
+
+
+
