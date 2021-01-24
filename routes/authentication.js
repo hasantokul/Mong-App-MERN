@@ -13,7 +13,6 @@ router.post("/forgot_password",forgotPassword)
 router.post("/verify_email",verifyEmail)
 router.post("/verify_registration",verifyRegistration)
 router.put("/change_password",changePassword)
- 
 
 
 
