@@ -23,6 +23,13 @@ const userSchema = new Schema({
             message: '{VALUE} is not a valid email'
         } 
     },
+    emailToken:{
+        type:String
+    },
+    isVerified:{
+        type:Boolean,
+        default:false
+    },
     password:{
         type:String,
         required:[true,"Please write a password"],
@@ -56,9 +63,13 @@ const userSchema = new Schema({
         ref:"Actor"
     }],
     createdDate : {
-        type:Date,
-        default:Date.now
+        type: Date,
+        default:JSON.stringify(Date.now()).split("T")[0]
     
+    }
+    ,
+    summary:{
+        type:String
     }
     
 

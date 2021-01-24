@@ -5,7 +5,7 @@ const singerSchema = new Schema({
     name:{
         type:String,
         required:[true,"Please write the singer/group name"],
-        unique:[true,"You have already added this singer/group"]
+        
     },
     img:{
         type:String

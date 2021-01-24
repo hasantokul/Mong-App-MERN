@@ -5,7 +5,7 @@ const movieSchema = new Schema({
     name:{
         type:String,
         required:[true,"Please write a movie name"],
-        unique:[true,"You have already added this movie"]
+        
     },
     img:{
         type:String

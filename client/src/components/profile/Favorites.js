@@ -106,7 +106,7 @@ export default class Favorites extends Component {
                   {
                     this.state.singers.map(singer => (
                       
-                      <div class="col-md-4">
+                      <div class="col-md-4 w-50">
                         <div class="card mb-4 box-shadow">
                           <img  class="card-img-top" src={singer.img} alt="Card image cap"/>
                           <div class="card-body">
@@ -141,7 +141,7 @@ export default class Favorites extends Component {
               {
                 this.state.actors.map(actor => (
                   
-                  <div class="col-md-4">
+                  <div class="col-md-4 w-50">
                   <div class="card mb-4 box-shadow">
                     <img class="card-img-top" src={actor.img} alt="Card image cap"/>
                     <div class="card-body">

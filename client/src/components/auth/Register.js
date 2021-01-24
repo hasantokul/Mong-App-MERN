@@ -13,7 +13,8 @@ export default class Register extends Component {
             age:null,
             location:"",
             business:"",
-            errorMessage:""
+            errorMessage:"",
+            message:""
         }
     }
     
@@ -23,7 +24,7 @@ export default class Register extends Component {
         axios.post('http://localhost:5000/mong/authentication/register', userData)
         .then(res => {
             
-            window.location.assign("/")
+            this.setState({message:res.data.message})
             
         })
         .catch(err => {
@@ -89,6 +90,9 @@ export default class Register extends Component {
                         <button style={{marginBottom:"1em"}} type="submit" className="btn btn-danger">Register</button><br></br>
                         {
                             this.state.errorMessage?<div className="alert alert-danger">{this.state.errorMessage}</div> :null
+                        }
+                        {
+                            this.state.message?<div className="alert alert-primary">{this.state.message}</div> :null
                         }
                 
                         </form>

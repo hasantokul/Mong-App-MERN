@@ -13,6 +13,9 @@ import AddActor from '../adding/AddActor'
 import LoginForm from "../auth/LoginForm"
 import Register from "../auth/Register"
 import Users from '../lists/Users'
+import VerifyEmail from '../auth/VerifyEmail'
+import ChangePassword from '../auth/ChangePassword'
+import VerifyRegister from "../auth/VerifyRegister"
 
 export default class Body extends Component
 {
@@ -24,6 +27,9 @@ export default class Body extends Component
             
             
             <Container>
+                    <Route path = "/verify_registration" exact component = {VerifyRegister}></Route>
+                    <Route path = "/change_password" exact component = {ChangePassword}></Route>
+                    <Route path = "/verify_email" exact component = {VerifyEmail}></Route>
                     <Route path = "/search/users" exact component = {Users}></Route>
                     <Row>
                     <div style={{marginTop:"3em"}} className="col-lg-5">

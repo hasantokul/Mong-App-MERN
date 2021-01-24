@@ -5,7 +5,7 @@ const actorSchema = new Schema({
     name:{
         type:String,
         required:[true,"Please write a actor/actress name"],
-        unique:[true,"You have already added this actor/actress"]
+        
     },
     img:{
         type:String

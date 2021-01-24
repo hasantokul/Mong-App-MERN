@@ -12,12 +12,12 @@ const storage = multer.diskStorage({
 
     },
     filename: function (req, file, cb) {
-        console.log("File Object",file);
+        
         let ext = '';
         if(file.originalname.split('.').length >1 ){
             ext = file.originalname.substring(file.originalname.lastIndexOf('.'));
         }
-        console.log('ext', ext);
+        
         cb(null, file.fieldname + '-' + Date.now() + ext)
     }
  });
