@@ -6,10 +6,10 @@ commands below to start the project:
 
 in first terminal :
 
-#npm start
+> npm start
 
 to the second terminal:
 
-#cd client
+1) > cd client
 
-#npm start
+2) > npm start
