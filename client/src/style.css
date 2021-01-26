@@ -1,0 +1,37 @@
+.list-img {
+    border-radius: 1px;
+    width: 8em;
+    height: 9em;
+}
+
+.mt-10 {
+    margin-top: 10em;
+}
+
+.mr-7 {
+    margin-right: 7px
+}
+
+.user-item {
+    height: 10em;
+    width: 60rem;
+    padding: 0.5rem;
+    border-radius: 0%;
+    
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+      
+}
+
+.title-white {
+    color: floralwhite;
+}
+
+.biography {
+    color: floralwhite;
+    font-size: small;
+    font-style: italic;
+}
