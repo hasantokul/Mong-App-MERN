@@ -10,6 +10,6 @@ in first terminal :
 
 to the second terminal:
 
-#cd client"
+#cd client
 
-#npm start"
+#npm start
